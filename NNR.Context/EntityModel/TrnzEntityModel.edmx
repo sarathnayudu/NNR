@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TrnzDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="TrnzDBModelStoreContainer">
+          <EntitySet Name="TransactionDetail" EntityType="TrnzDBModel.Store.TransactionDetail" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TransactionHeader" EntityType="TrnzDBModel.Store.TransactionHeader" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TypeAndSub" EntityType="TrnzDBModel.Store.TypeAndSub" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UpdateHistory" EntityType="TrnzDBModel.Store.UpdateHistory" store:Type="Tables" store:Schema="dbo" store:Name="UpdateHistory">
+            <DefiningQuery>SELECT 
+      [UpdateHistory].[DBName] AS [DBName], 
+      [UpdateHistory].[IsReadyToUpdate] AS [IsReadyToUpdate], 
+      [UpdateHistory].[CreatedDate] AS [CreatedDate], 
+      [UpdateHistory].[UpdatedDate] AS [UpdatedDate]
+      FROM [dbo].[UpdateHistory] AS [UpdateHistory]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Users" EntityType="TrnzDBModel.Store.Users" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="TransactionDetail">
+          <Key>
+            <PropertyRef Name="TrnzDetailID" />
+          </Key>
+          <Property Name="TrnzDetailID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TrnzHdrID" Type="int" Nullable="false" />
+          <Property Name="TrnzTypeAndSubID" Type="int" Nullable="false" />
+          <Property Name="TrnzType" Type="int" Nullable="false" />
+          <Property Name="TrnzLiveID" Type="nvarchar" MaxLength="50" />
+          <Property Name="TrnzLiveDescription" Type="nvarchar" MaxLength="50" />
+          <Property Name="TrnzLiveDate" Type="datetime" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TransactionHeader">
+          <Key>
+            <PropertyRef Name="TrnzHdrID" />
+          </Key>
+          <Property Name="TrnzHdrID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TrnzDescription" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TypeAndSub">
+          <Key>
+            <PropertyRef Name="TypeAndSubID" />
+          </Key>
+          <Property Name="TypeAndSubID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TypeAndSubCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="TypeAndSubDescription" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'TrnzDB.dbo.UpdateHistory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="UpdateHistory">
+          <Key>
+            <PropertyRef Name="DBName" />
+            <PropertyRef Name="IsReadyToUpdate" />
+            <PropertyRef Name="CreatedDate" />
+            <PropertyRef Name="UpdatedDate" />
+          </Key>
+          <Property Name="DBName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="IsReadyToUpdate" Type="bit" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TrnzDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="TrnzDBEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="TransactionDetails" EntityType="TrnzDBModel.TransactionDetail" />
+          <EntitySet Name="TransactionHeaders" EntityType="TrnzDBModel.TransactionHeader" />
+          <EntitySet Name="TypeAndSubs" EntityType="TrnzDBModel.TypeAndSub" />
+          <EntitySet Name="UpdateHistories" EntityType="TrnzDBModel.UpdateHistory" />
+          <EntitySet Name="Users" EntityType="TrnzDBModel.User" />
+        </EntityContainer>
+        <EntityType Name="TransactionDetail">
+          <Key>
+            <PropertyRef Name="TrnzDetailID" />
+          </Key>
+          <Property Name="TrnzDetailID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="TrnzHdrID" Type="Int32" Nullable="false" />
+          <Property Name="TrnzTypeAndSubID" Type="Int32" Nullable="false" />
+          <Property Name="TrnzType" Type="Int32" Nullable="false" />
+          <Property Name="TrnzLiveID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TrnzLiveDescription" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TrnzLiveDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="TransactionHeader">
+          <Key>
+            <PropertyRef Name="TrnzHdrID" />
+          </Key>
+          <Property Name="TrnzHdrID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="TrnzDescription" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="TypeAndSub">
+          <Key>
+            <PropertyRef Name="TypeAndSubID" />
+          </Key>
+          <Property Name="TypeAndSubID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="TypeAndSubCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TypeAndSubDescription" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="UpdateHistory">
+          <Key>
+            <PropertyRef Name="DBName" />
+            <PropertyRef Name="IsReadyToUpdate" />
+            <PropertyRef Name="CreatedDate" />
+            <PropertyRef Name="UpdatedDate" />
+          </Key>
+          <Property Name="DBName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IsReadyToUpdate" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="FirstName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TrnzDBModelStoreContainer" CdmEntityContainer="TrnzDBEntities">
+          <EntitySetMapping Name="TransactionDetails">
+            <EntityTypeMapping TypeName="TrnzDBModel.TransactionDetail">
+              <MappingFragment StoreEntitySet="TransactionDetail">
+                <ScalarProperty Name="TrnzDetailID" ColumnName="TrnzDetailID" />
+                <ScalarProperty Name="TrnzHdrID" ColumnName="TrnzHdrID" />
+                <ScalarProperty Name="TrnzTypeAndSubID" ColumnName="TrnzTypeAndSubID" />
+                <ScalarProperty Name="TrnzType" ColumnName="TrnzType" />
+                <ScalarProperty Name="TrnzLiveID" ColumnName="TrnzLiveID" />
+                <ScalarProperty Name="TrnzLiveDescription" ColumnName="TrnzLiveDescription" />
+                <ScalarProperty Name="TrnzLiveDate" ColumnName="TrnzLiveDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TransactionHeaders">
+            <EntityTypeMapping TypeName="TrnzDBModel.TransactionHeader">
+              <MappingFragment StoreEntitySet="TransactionHeader">
+                <ScalarProperty Name="TrnzHdrID" ColumnName="TrnzHdrID" />
+                <ScalarProperty Name="TrnzDescription" ColumnName="TrnzDescription" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TypeAndSubs">
+            <EntityTypeMapping TypeName="TrnzDBModel.TypeAndSub">
+              <MappingFragment StoreEntitySet="TypeAndSub">
+                <ScalarProperty Name="TypeAndSubID" ColumnName="TypeAndSubID" />
+                <ScalarProperty Name="TypeAndSubCode" ColumnName="TypeAndSubCode" />
+                <ScalarProperty Name="TypeAndSubDescription" ColumnName="TypeAndSubDescription" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UpdateHistories">
+            <EntityTypeMapping TypeName="TrnzDBModel.UpdateHistory">
+              <MappingFragment StoreEntitySet="UpdateHistory">
+                <ScalarProperty Name="DBName" ColumnName="DBName" />
+                <ScalarProperty Name="IsReadyToUpdate" ColumnName="IsReadyToUpdate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="TrnzDBModel.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

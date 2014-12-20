@@ -1,0 +1,4 @@
+c:\users\user 2\documents\visual studio 2012\Projects\NNRSolution\NNR.Common\bin\Debug\NNR.Common.dll
+c:\users\user 2\documents\visual studio 2012\Projects\NNRSolution\NNR.Common\bin\Debug\NNR.Common.pdb
+c:\users\user 2\documents\visual studio 2012\Projects\NNRSolution\NNR.Common\obj\Debug\NNR.Common.dll
+c:\users\user 2\documents\visual studio 2012\Projects\NNRSolution\NNR.Common\obj\Debug\NNR.Common.pdb
