@@ -2,3 +2,8 @@ c:\users\user 2\documents\visual studio 2012\Projects\NNRSolution\NNR.HTMLHelper
 c:\users\user 2\documents\visual studio 2012\Projects\NNRSolution\NNR.HTMLHelper\bin\Debug\NNR.HTMLHelper.pdb
 c:\users\user 2\documents\visual studio 2012\Projects\NNRSolution\NNR.HTMLHelper\obj\Debug\NNR.HTMLHelper.dll
 c:\users\user 2\documents\visual studio 2012\Projects\NNRSolution\NNR.HTMLHelper\obj\Debug\NNR.HTMLHelper.pdb
+F:\MyFolder\Personal\Repositary\NNR\NNR.HTMLHelper\bin\Debug\NNR.HTMLHelper.dll
+F:\MyFolder\Personal\Repositary\NNR\NNR.HTMLHelper\bin\Debug\NNR.HTMLHelper.pdb
+F:\MyFolder\Personal\Repositary\NNR\NNR.HTMLHelper\obj\Debug\NNR.HTMLHelper.csprojResolveAssemblyReference.cache
+F:\MyFolder\Personal\Repositary\NNR\NNR.HTMLHelper\obj\Debug\NNR.HTMLHelper.dll
+F:\MyFolder\Personal\Repositary\NNR\NNR.HTMLHelper\obj\Debug\NNR.HTMLHelper.pdb
