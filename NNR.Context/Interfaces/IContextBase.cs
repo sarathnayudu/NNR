@@ -12,7 +12,7 @@ namespace TeleMed.Context.Interfaces
     {
         #region class interfaces
 
-        IRepository<User> Item { get; }
+       
 
         #endregion
     }

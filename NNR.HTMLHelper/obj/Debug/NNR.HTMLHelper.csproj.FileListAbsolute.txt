@@ -7,3 +7,7 @@ F:\MyFolder\Personal\Repositary\NNR\NNR.HTMLHelper\bin\Debug\NNR.HTMLHelper.pdb
 F:\MyFolder\Personal\Repositary\NNR\NNR.HTMLHelper\obj\Debug\NNR.HTMLHelper.csprojResolveAssemblyReference.cache
 F:\MyFolder\Personal\Repositary\NNR\NNR.HTMLHelper\obj\Debug\NNR.HTMLHelper.dll
 F:\MyFolder\Personal\Repositary\NNR\NNR.HTMLHelper\obj\Debug\NNR.HTMLHelper.pdb
+D:\myfolder\Repositary\NNR\NNR.HTMLHelper\bin\Debug\NNR.HTMLHelper.dll
+D:\myfolder\Repositary\NNR\NNR.HTMLHelper\bin\Debug\NNR.HTMLHelper.pdb
+D:\myfolder\Repositary\NNR\NNR.HTMLHelper\obj\Debug\NNR.HTMLHelper.dll
+D:\myfolder\Repositary\NNR\NNR.HTMLHelper\obj\Debug\NNR.HTMLHelper.pdb

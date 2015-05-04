@@ -33,7 +33,7 @@ namespace TeleMed.Context.Infrastructure
             DbContext objectContext = GetCurrentObjectContext(contextKey);
             if (objectContext == null) // create and store the object context
             {
-                objectContext = new TrnzDBEntities();
+                objectContext = new IMINEntities();
                 StoreCurrentObjectContext(objectContext, contextKey);
             }
             return objectContext;

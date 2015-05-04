@@ -12,14 +12,13 @@ namespace NNR.Context.EntityModel
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class AspNetUserClaim
     {
-        public int UserID { get; set; }
-        public string UserName { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Email { get; set; }
-        public System.DateTime CreatedDate { get; set; }
-        public System.DateTime UpdatedDate { get; set; }
+        public int Id { get; set; }
+        public string ClaimType { get; set; }
+        public string ClaimValue { get; set; }
+        public string User_Id { get; set; }
+    
+        public virtual AspNetUser AspNetUser { get; set; }
     }
 }

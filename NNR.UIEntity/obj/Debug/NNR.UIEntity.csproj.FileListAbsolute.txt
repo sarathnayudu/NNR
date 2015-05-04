@@ -7,3 +7,7 @@ F:\MyFolder\Personal\Repositary\NNR\NNR.UIEntity\bin\Debug\NNR.UIEntity.pdb
 F:\MyFolder\Personal\Repositary\NNR\NNR.UIEntity\obj\Debug\NNR.UIEntity.csprojResolveAssemblyReference.cache
 F:\MyFolder\Personal\Repositary\NNR\NNR.UIEntity\obj\Debug\NNR.UIEntity.dll
 F:\MyFolder\Personal\Repositary\NNR\NNR.UIEntity\obj\Debug\NNR.UIEntity.pdb
+D:\myfolder\Repositary\NNR\NNR.UIEntity\bin\Debug\NNR.UIEntity.dll
+D:\myfolder\Repositary\NNR\NNR.UIEntity\bin\Debug\NNR.UIEntity.pdb
+D:\myfolder\Repositary\NNR\NNR.UIEntity\obj\Debug\NNR.UIEntity.dll
+D:\myfolder\Repositary\NNR\NNR.UIEntity\obj\Debug\NNR.UIEntity.pdb

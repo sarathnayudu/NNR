@@ -13,10 +13,10 @@ namespace NNR.Context.EntityModel
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class TrnzDBEntities : DbContext
+    public partial class IMINEntities : DbContext
     {
-        public TrnzDBEntities()
-            : base("name=TrnzDBEntities")
+        public IMINEntities()
+            : base("name=IMINEntities")
         {
         }
     
@@ -25,10 +25,10 @@ namespace NNR.Context.EntityModel
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<TransactionDetail> TransactionDetails { get; set; }
-        public DbSet<TransactionHeader> TransactionHeaders { get; set; }
-        public DbSet<TypeAndSub> TypeAndSubs { get; set; }
-        public DbSet<UpdateHistory> UpdateHistories { get; set; }
-        public DbSet<User> Users { get; set; }
+        public DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
+        public DbSet<AspNetRole> AspNetRoles { get; set; }
+        public DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
+        public DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
+        public DbSet<AspNetUser> AspNetUsers { get; set; }
     }
 }

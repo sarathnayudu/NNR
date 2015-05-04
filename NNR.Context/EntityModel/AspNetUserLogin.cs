@@ -12,12 +12,12 @@ namespace NNR.Context.EntityModel
     using System;
     using System.Collections.Generic;
     
-    public partial class TypeAndSub
+    public partial class AspNetUserLogin
     {
-        public int TypeAndSubID { get; set; }
-        public string TypeAndSubCode { get; set; }
-        public string TypeAndSubDescription { get; set; }
-        public System.DateTime CreatedDate { get; set; }
-        public System.DateTime UpdateDate { get; set; }
+        public string UserId { get; set; }
+        public string LoginProvider { get; set; }
+        public string ProviderKey { get; set; }
+    
+        public virtual AspNetUser AspNetUser { get; set; }
     }
 }

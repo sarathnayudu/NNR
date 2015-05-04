@@ -12,16 +12,16 @@ namespace NNR.Context.EntityModel
     using System;
     using System.Collections.Generic;
     
-    public partial class TransactionDetail
+    public partial class AspNetRole
     {
-        public int TrnzDetailID { get; set; }
-        public int TrnzHdrID { get; set; }
-        public int TrnzTypeAndSubID { get; set; }
-        public int TrnzType { get; set; }
-        public string TrnzLiveID { get; set; }
-        public string TrnzLiveDescription { get; set; }
-        public Nullable<System.DateTime> TrnzLiveDate { get; set; }
-        public System.DateTime CreatedDate { get; set; }
-        public System.DateTime UpdatedDate { get; set; }
+        public AspNetRole()
+        {
+            this.AspNetUsers = new HashSet<AspNetUser>();
+        }
+    
+        public string Id { get; set; }
+        public string Name { get; set; }
+    
+        public virtual ICollection<AspNetUser> AspNetUsers { get; set; }
     }
 }

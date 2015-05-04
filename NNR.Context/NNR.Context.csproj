@@ -47,35 +47,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EntityModel\TransactionDetail.cs">
-      <DependentUpon>TrnzEntityModel.tt</DependentUpon>
+    <Compile Include="EntityModel\AspNetRole.cs">
+      <DependentUpon>IMINDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="EntityModel\TransactionHeader.cs">
-      <DependentUpon>TrnzEntityModel.tt</DependentUpon>
+    <Compile Include="EntityModel\AspNetUser.cs">
+      <DependentUpon>IMINDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="EntityModel\TrnzEntityModel.Context.cs">
+    <Compile Include="EntityModel\AspNetUserClaim.cs">
+      <DependentUpon>IMINDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\AspNetUserLogin.cs">
+      <DependentUpon>IMINDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\C__MigrationHistory.cs">
+      <DependentUpon>IMINDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\IMINDB.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TrnzEntityModel.Context.tt</DependentUpon>
+      <DependentUpon>IMINDB.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="EntityModel\TrnzEntityModel.cs">
+    <Compile Include="EntityModel\IMINDB.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TrnzEntityModel.tt</DependentUpon>
+      <DependentUpon>IMINDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="EntityModel\TrnzEntityModel.Designer.cs">
+    <Compile Include="EntityModel\IMINDB.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TrnzEntityModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="EntityModel\TypeAndSub.cs">
-      <DependentUpon>TrnzEntityModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EntityModel\UpdateHistory.cs">
-      <DependentUpon>TrnzEntityModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EntityModel\User.cs">
-      <DependentUpon>TrnzEntityModel.tt</DependentUpon>
+      <DependentUpon>IMINDB.edmx</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\ContextManager.cs" />
     <Compile Include="Infrastructure\TeleMedRepositoryContext.cs" />
@@ -86,22 +86,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <EntityDeploy Include="EntityModel\TrnzEntityModel.edmx">
+    <EntityDeploy Include="EntityModel\IMINDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TrnzEntityModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>IMINDB.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="EntityModel\TrnzEntityModel.Context.tt">
+    <None Include="EntityModel\IMINDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TrnzEntityModel.edmx</DependentUpon>
-      <LastGenOutput>TrnzEntityModel.Context.cs</LastGenOutput>
+      <DependentUpon>IMINDB.edmx</DependentUpon>
+      <LastGenOutput>IMINDB.Context.cs</LastGenOutput>
     </None>
-    <None Include="EntityModel\TrnzEntityModel.edmx.diagram">
-      <DependentUpon>TrnzEntityModel.edmx</DependentUpon>
+    <None Include="EntityModel\IMINDB.edmx.diagram">
+      <DependentUpon>IMINDB.edmx</DependentUpon>
     </None>
-    <None Include="EntityModel\TrnzEntityModel.tt">
+    <None Include="EntityModel\IMINDB.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TrnzEntityModel.edmx</DependentUpon>
-      <LastGenOutput>TrnzEntityModel.cs</LastGenOutput>
+      <DependentUpon>IMINDB.edmx</DependentUpon>
+      <LastGenOutput>IMINDB.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

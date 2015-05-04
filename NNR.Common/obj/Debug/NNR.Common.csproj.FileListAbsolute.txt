@@ -7,3 +7,7 @@ F:\MyFolder\Personal\Repositary\NNR\NNR.Common\bin\Debug\NNR.Common.pdb
 F:\MyFolder\Personal\Repositary\NNR\NNR.Common\obj\Debug\NNR.Common.csprojResolveAssemblyReference.cache
 F:\MyFolder\Personal\Repositary\NNR\NNR.Common\obj\Debug\NNR.Common.dll
 F:\MyFolder\Personal\Repositary\NNR\NNR.Common\obj\Debug\NNR.Common.pdb
+D:\myfolder\Repositary\NNR\NNR.Common\bin\Debug\NNR.Common.dll
+D:\myfolder\Repositary\NNR\NNR.Common\bin\Debug\NNR.Common.pdb
+D:\myfolder\Repositary\NNR\NNR.Common\obj\Debug\NNR.Common.dll
+D:\myfolder\Repositary\NNR\NNR.Common\obj\Debug\NNR.Common.pdb

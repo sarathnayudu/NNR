@@ -12,11 +12,11 @@ namespace NNR.Context.EntityModel
     using System;
     using System.Collections.Generic;
     
-    public partial class TransactionHeader
+    public partial class C__MigrationHistory
     {
-        public int TrnzHdrID { get; set; }
-        public string TrnzDescription { get; set; }
-        public System.DateTime CreatedDate { get; set; }
-        public System.DateTime UpdatedDate { get; set; }
+        public string MigrationId { get; set; }
+        public string ContextKey { get; set; }
+        public byte[] Model { get; set; }
+        public string ProductVersion { get; set; }
     }
 }
