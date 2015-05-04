@@ -21,3 +21,4 @@ D:\myfolder\Repositary\NNR\NNR.Context\bin\Debug\EntityFramework.dll
 D:\myfolder\Repositary\NNR\NNR.Context\bin\Debug\EntityFramework.xml
 D:\myfolder\Repositary\NNR\NNR.Context\obj\Debug\NNR.Context.dll
 D:\myfolder\Repositary\NNR\NNR.Context\obj\Debug\NNR.Context.pdb
+D:\myfolder\Repositary\NNR\NNR.Context\obj\Debug\NNR.Context.csprojResolveAssemblyReference.cache
