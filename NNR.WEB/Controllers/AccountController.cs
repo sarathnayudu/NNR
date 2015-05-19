@@ -16,5 +16,23 @@ namespace NNR.WEB.Controllers
         {
             return PartialView("_Login", new LoginVM());
         }
+
+        //
+        // GET: /Default/
+        [Route("CreateUser")]
+        [HttpGet]
+        public ActionResult CreateUser()
+        {
+            return PartialView("../Partial/_CreateUser", new CreateUserVM());
+        }
+        //
+        // GET: /Default/
+        [Route("CreateUser")]
+        [HttpGet]
+        public ActionResult CreateUser(CreateUserVM cUserUM)
+        {
+            return PartialView("../Partial/_CreateUser", new CreateUserVM());
+        }
+
 	}
 }
