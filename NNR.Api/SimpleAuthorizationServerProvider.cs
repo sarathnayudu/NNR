@@ -18,9 +18,8 @@ namespace NNR.Api
 
         public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
-
             context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
-
+            var identity = new ClaimsIdentity(context.Options.AuthenticationType);
             using (AuthRepository _repo = new AuthRepository())
             {
                 IdentityUser user = await _repo.FindUser(context.UserName, context.Password);
@@ -30,14 +29,23 @@ namespace NNR.Api
                     context.SetError("invalid_grant", "The user name or password is incorrect.");
                     return;
                 }
+                identity.AddClaim(new Claim("UName", user.UserName));
+                identity.AddClaims(user.Roles.Select(e => new Claim(e.RoleId, e.RoleId)));
+                identity.AddClaim(new Claim("Email", user.Email));
+                identity.AddClaim(new Claim("UserID", user.Id));
             }
 
-            var identity = new ClaimsIdentity(context.Options.AuthenticationType);
-            identity.AddClaim(new Claim("sub", context.UserName));
-            identity.AddClaim(new Claim("role", "user"));
-
             context.Validated(identity);
+        }
+        public override Task TokenEndpoint(OAuthTokenEndpointContext context)
+        {
+            var identity = context.Identity;
+            foreach (Claim claim in identity.Claims)
+            {
+                context.AdditionalResponseParameters.Add(claim.Type, claim.Value);
+            }
 
+            return Task.FromResult<object>(null);
         }
     }
 }

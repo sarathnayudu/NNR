@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNet.Identity;
 using NNR.UIEntity.Model;
+using NNR.UIEntity.VM;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,12 +24,13 @@ namespace NNR.Api.Controllers
         // POST api/Account/Register
         [AllowAnonymous]
         [Route("Register")]
-        public async Task<IHttpActionResult> Register(UserModel userModel)
+        public async Task<IHttpActionResult> Register(CreateUserVM userModel)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
+         
 
             IdentityResult result = await _repo.RegisterUser(userModel);
 

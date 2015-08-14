@@ -14,6 +14,6 @@ namespace NNR.UIEntity.Model
 
         public string Email { get; set; }
 
-        public string RoleID { get; set; }
+        public List<string> LstRoles { get; set; }
     }
 }

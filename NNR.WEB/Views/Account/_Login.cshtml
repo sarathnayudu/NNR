@@ -7,10 +7,9 @@
 
 <section id="loginForm">
     @*<h2>Use a local account to log in.</h2>*@
-    @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+    @using (Html.BeginForm("UserLogin", "Account"))
     {
-        @Html.AntiForgeryToken()
-        @Html.ValidationSummary(true)
+       
         <fieldset class="mrgtop22per mrgleft50per mrgbot34per">
 
             <div class="outer shadow ">
@@ -31,7 +30,7 @@
                                     <td colspan="2">
                                         @*@Html.TextBoxFor(m => m.Email, new { @class = "textbox" })*@
                                         @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Enter Email Address" })
-                                        @Html.ValidationMessageFor(m => m.Email)
+                                     
                                     </td>
                                 </tr>
                                 <tr>
@@ -46,7 +45,7 @@
                                     <td colspan="2">
                                         @*@Html.PasswordFor(m => m.Password, new { @class = "textbox" })*@
                                         @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Enter Password" })
-                                        @Html.ValidationMessageFor(m => m.Password)
+                                     
                                     </td>
                                 </tr>
                                 <tr>

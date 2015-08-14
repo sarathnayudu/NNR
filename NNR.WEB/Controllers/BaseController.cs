@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -46,6 +47,22 @@ namespace NNR.WEB.Controllers
             {
                 return RedirectToAction("PhysicianView", "Physician");
             }
+        }
+        public async Task<HttpResponseMessage> PostAsJsonAsync<T>(string url, T model)
+        {
+            var response = HTTPClient.PostAsJsonAsync(url, model).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                return response;
+            }
+            GetExceptionCode(response);
+            return null;
+        }
+        private void GetExceptionCode(HttpResponseMessage response)
+        {
+            var serviceException = response.Content.ReadAsStringAsync();
+            throw new HttpException((int)response.StatusCode, serviceException.Result);
+
         }
 	}
 }

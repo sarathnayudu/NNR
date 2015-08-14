@@ -2,13 +2,13 @@ C:\Users\User 2\Documents\Visual Studio 2012\Projects\NNRSolution\NNR.UIEntity\b
 C:\Users\User 2\Documents\Visual Studio 2012\Projects\NNRSolution\NNR.UIEntity\bin\Debug\NNR.UIEntity.pdb
 C:\Users\User 2\Documents\Visual Studio 2012\Projects\NNRSolution\NNR.UIEntity\obj\Debug\NNR.UIEntity.dll
 C:\Users\User 2\Documents\Visual Studio 2012\Projects\NNRSolution\NNR.UIEntity\obj\Debug\NNR.UIEntity.pdb
-F:\MyFolder\Personal\Repositary\NNR\NNR.UIEntity\bin\Debug\NNR.UIEntity.dll
-F:\MyFolder\Personal\Repositary\NNR\NNR.UIEntity\bin\Debug\NNR.UIEntity.pdb
-F:\MyFolder\Personal\Repositary\NNR\NNR.UIEntity\obj\Debug\NNR.UIEntity.csprojResolveAssemblyReference.cache
-F:\MyFolder\Personal\Repositary\NNR\NNR.UIEntity\obj\Debug\NNR.UIEntity.dll
-F:\MyFolder\Personal\Repositary\NNR\NNR.UIEntity\obj\Debug\NNR.UIEntity.pdb
 D:\myfolder\Repositary\NNR\NNR.UIEntity\bin\Debug\NNR.UIEntity.dll
 D:\myfolder\Repositary\NNR\NNR.UIEntity\bin\Debug\NNR.UIEntity.pdb
 D:\myfolder\Repositary\NNR\NNR.UIEntity\obj\Debug\NNR.UIEntity.dll
 D:\myfolder\Repositary\NNR\NNR.UIEntity\obj\Debug\NNR.UIEntity.pdb
 D:\myfolder\Repositary\NNR\NNR.UIEntity\obj\Debug\NNR.UIEntity.csprojResolveAssemblyReference.cache
+F:\MyFolder\Personal\Repositary\NNR\NNR.UIEntity\bin\Debug\NNR.UIEntity.dll
+F:\MyFolder\Personal\Repositary\NNR\NNR.UIEntity\bin\Debug\NNR.UIEntity.pdb
+F:\MyFolder\Personal\Repositary\NNR\NNR.UIEntity\obj\Debug\NNR.UIEntity.dll
+F:\MyFolder\Personal\Repositary\NNR\NNR.UIEntity\obj\Debug\NNR.UIEntity.pdb
+F:\MyFolder\Personal\Repositary\NNR\NNR.UIEntity\obj\Debug\NNR.UIEntity.csprojResolveAssemblyReference.cache

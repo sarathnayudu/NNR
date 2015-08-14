@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using NNR.UIEntity.Model;
+using NNR.UIEntity.VM;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,11 +22,13 @@ namespace NNR.Api
             _userManager = new UserManager<IdentityUser>(new UserStore<IdentityUser>(_ctx));
         }
 
-        public async Task<IdentityResult> RegisterUser(UserModel userModel)
+        public async Task<IdentityResult> RegisterUser(CreateUserVM userModel)
         {
             IdentityUser user = new IdentityUser
             {
-                UserName = userModel.UserName
+                Email=userModel.Email,
+                UserName = userModel.Email,
+                PhoneNumber = userModel.ContactNo
             };
 
             var result = await _userManager.CreateAsync(user, userModel.Password);
