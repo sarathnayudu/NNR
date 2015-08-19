@@ -45,7 +45,7 @@ namespace NNR.WEB.Controllers
             }
             else
             {
-                return RedirectToAction("PhysicianView", "Physician");
+                return RedirectToAction("Template", "Template");
             }
         }
         public async Task<HttpResponseMessage> PostAsJsonAsync<T>(string url, T model)

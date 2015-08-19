@@ -71,7 +71,7 @@ namespace NNR.WEB.Controllers
 
                         }
                         this.HttpContext.Session["OAuthObj"] = _oAuth;
-                        return RedirectToAction("PhysicianView", "Physician");
+                        return RedirectToAction("Template", "Template");
                     }
                     else
                     {
