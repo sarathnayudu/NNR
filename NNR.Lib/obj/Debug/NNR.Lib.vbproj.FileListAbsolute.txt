@@ -14,3 +14,4 @@ F:\MyFolder\Personal\Repositary\NNR\NNR.Lib\obj\Debug\NNR.Lib.vbproj.GenerateRes
 F:\MyFolder\Personal\Repositary\NNR\NNR.Lib\obj\Debug\NNR.Lib.dll
 F:\MyFolder\Personal\Repositary\NNR\NNR.Lib\obj\Debug\NNR.Lib.xml
 F:\MyFolder\Personal\Repositary\NNR\NNR.Lib\obj\Debug\NNR.Lib.pdb
+F:\MyFolder\Personal\Repositary\NNR\NNR.Lib\obj\Debug\NNR.Lib.vbprojResolveAssemblyReference.cache

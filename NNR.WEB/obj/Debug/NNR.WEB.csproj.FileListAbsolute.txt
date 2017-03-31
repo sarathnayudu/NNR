@@ -96,3 +96,4 @@ F:\MyFolder\Personal\Repositary\NNR\NNR.WEB\bin\System.Web.Helpers.xml
 F:\MyFolder\Personal\Repositary\NNR\NNR.WEB\bin\System.Web.Mvc.xml
 F:\MyFolder\Personal\Repositary\NNR\NNR.WEB\obj\Debug\NNR.WEB.dll
 F:\MyFolder\Personal\Repositary\NNR\NNR.WEB\obj\Debug\NNR.WEB.pdb
+F:\MyFolder\Personal\Repositary\NNR\NNR.WEB\bin\NNR.WEB.dll.config

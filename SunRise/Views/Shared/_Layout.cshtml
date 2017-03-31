@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+    </script>
+</head>
+<body>
+    <div id="main">
+        <div id="dark_container">
+            <div id="banner">
+                <div id="welcome">
+                    <h1>Welcome To Grey Construction</h1>
+                </div><!--close welcome-->
+                <div id="welcome_slogan">
+                    <h1>Your Company Slogan Here</h1>
+                </div><!--close welcome_slogan-->
+                <div id="slideshow">
+                    <ul class="slideshow">
+                        <li class="show"><img width="940" height="250" src="~/images/home_1.jpg" alt="&quot;Enter your caption here&quot;" /></li>
+                        <li><img width="940" height="250" src="~/images/home_2.jpg" alt="&quot;Enter your caption here&quot;" /></li>
+                    </ul>
+                </div><!--close slideshow-->
+            </div><!--close banner-->
+        </div><!--close dark_container-->
+
+        <div id="menu_container">
+            <div id="menubar">
+                <ul class="sf-menu" id="nav">
+                    <li class="selected"><a href='@Url.Action("Index", "Home")'>Home</a></li>
+                    <li>
+                        <a href='@Url.Action("OurWork", "Home")'>Our Work</a>
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li><a href="#">Drop Down 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href='@Url.Action("Testimonials", "Home")'>Testimonials</a>
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li>
+                                <a href="#">Drop Down 3</a>
+                                <ul>
+                                    <li><a href="#">More Drop Down 1</a></li>
+                                    <li><a href="#">More Drop Down 2</a></li>
+                                    <li><a href="#">More Drop Down 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href='@Url.Action("Projects", "Home")'>Projects</a></li>
+                    <li><a href='@Url.Action("Contact", "Home")'>Contact Us</a></li>
+                </ul>
+            </div><!--close menubar-->
+        </div><!--close menu_container-->	
+    <div id="site_content">
+        @RenderBody()
+        <hr />        
+    </div>
+
+
+        <div id="footer_container">
+            <div id="footer">
+                <a href="http://validator.w3.org/check?uri=referer">Valid XHTML</a> | <a href="http://fotogrph.com/">Images</a> | website template by <a href="http://www.araynordesign.co.uk">ARaynorDesign</a>
+            </div><!--close footer-->
+        </div><!--close footer_container-->  
+</div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

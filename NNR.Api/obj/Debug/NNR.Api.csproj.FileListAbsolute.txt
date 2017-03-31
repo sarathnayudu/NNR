@@ -121,3 +121,4 @@ F:\MyFolder\Personal\Repositary\NNR\NNR.Api\bin\System.Web.Http.WebHost.xml
 F:\MyFolder\Personal\Repositary\NNR\NNR.Api\obj\Debug\NNR.Api.csprojResolveAssemblyReference.cache
 F:\MyFolder\Personal\Repositary\NNR\NNR.Api\obj\Debug\NNR.Api.dll
 F:\MyFolder\Personal\Repositary\NNR\NNR.Api\obj\Debug\NNR.Api.pdb
+F:\MyFolder\Personal\Repositary\NNR\NNR.Api\bin\NNR.Api.dll.config
