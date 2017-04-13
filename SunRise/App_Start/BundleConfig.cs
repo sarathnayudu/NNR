@@ -23,8 +23,11 @@ namespace SunRise
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js", "~/Scripts/image_slide.js", "~/Scripts/jquery.easing-sooper.js", "~/Scripts/jquery.min.js", "~/Scripts/jquery.sooperfish.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/style.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/style.css", "~/Content/bootstrap.css",
+                      "~/Content/bootstrap.min.css",
+                   
+                      "~/Content/bootstrap-responsive.css"
+                      ));
         }
     }
 }
