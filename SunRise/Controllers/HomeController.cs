@@ -13,32 +13,36 @@ namespace SunRise.Controllers
             return View();
         }
 
-        public ActionResult OurWork()
-        {
-           
-
-            return View("_OurWork");
-        }
-
         public ActionResult Contact()
-        {
-           
+        {           
 
-            return View("_Contact");
+            return View();
         }
 
-        public ActionResult Projects()
-        {
-          
 
-            return View("_Projects");
+        public ActionResult Divisions()
+        {
+
+            return View();
         }
 
-        public ActionResult Testimonials()
+        public ActionResult QualityCommit()
         {
-          
 
-            return View("_Testimonials");
+            return View();
+        }
+
+
+        public ActionResult About()
+        {
+
+            return View();
+        }
+
+        public ActionResult Carer()
+        {
+
+            return View();
         }
     }
 }

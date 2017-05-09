@@ -227,9 +227,11 @@
     <Content Include="images\arrows-black.png" />
     <Content Include="images\clients.PNG" />
     <Content Include="images\content_image1.jpg" />
+    <Content Include="images\division1.PNG" />
     <Content Include="images\Exp.PNG" />
     <Content Include="images\home_1.jpg" />
     <Content Include="images\home_2.jpg" />
+    <Content Include="images\QualityCommit.PNG" />
     <Content Include="images\Team.PNG" />
     <Content Include="images\transparent.png" />
     <Content Include="Scripts\bootstrap.js" />
@@ -284,10 +286,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\_OurWork.cshtml" />
-    <Content Include="Views\Home\_Contact.cshtml" />
-    <Content Include="Views\Home\_Projects.cshtml" />
-    <Content Include="Views\Home\_Testimonials.cshtml" />
+    <Content Include="Views\Home\_divisions.cshtml" />
+    <Content Include="Views\Home\QualityCommit.cshtml" />
+    <Content Include="Views\Home\Carer.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
