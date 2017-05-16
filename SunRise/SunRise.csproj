@@ -234,9 +234,11 @@
     <Content Include="images\QualityCommit.PNG" />
     <Content Include="images\Team.PNG" />
     <Content Include="images\transparent.png" />
+    <Content Include="images\vnsLogo.PNG" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config" />
+    <None Include="Properties\PublishProfiles\home.pubxml" />
     <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="Scripts\image_slide.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
