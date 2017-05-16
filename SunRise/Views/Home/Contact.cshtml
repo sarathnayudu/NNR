@@ -4,7 +4,45 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
+
 <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2">
+
+            <img class="img-responsive" style="padding-top: 5px" src="~/images/1.jpg" />
+
+        </div>
+        <div class="col-lg-2">
+
+            <img class="img-responsive" style="padding-top: 5px" src="~/images/2.jpg" />
+
+        </div>
+        <div class="col-lg-2">
+
+            <img class="img-responsive" style="padding-top: 5px" src="~/images/3.jpg" />
+
+        </div>
+
+        <div class="col-lg-2">
+
+            <img class="img-responsive" style="padding-top: 5px" src="~/images/4.jpg" />
+
+        </div>
+        <div class="col-lg-2">
+
+            <img class="img-responsive" style="padding-top: 5px" src="~/images/5.jpg" />
+
+        </div>
+        <div class="col-lg-2">
+
+            <img class="img-responsive" style="padding-top: 5px" src="~/images/6.jpg" />
+
+        </div>
+
+
+    </div>
+
     <div class="row">
         <div class="col-lg-2">
 
@@ -57,6 +95,19 @@
                 Aparna Enterprises Limited is a leader in the distribution of building materials including uPVC Windows & Doors, Ready Mix Concrete, Tiles and much more. For more information, please contact our Hyderabad Corporate Office.
             </p>
 
+            <address>
+                <strong>VIJAYAWADA CORPORATE OFFICE</strong><br>
+                1234 Example Street<br>
+                Antartica, Example 0987<br>
+                <abbr title="Phone">P:</abbr> (123) 456-7890
+                <abbr title="Fax">F:</abbr> (123) 456-7890
+            </address>
+
+            <address>
+                <strong>Email</strong><br>
+                <a href="mailto:#">exam.ple@example.com</a>
+            </address>
+
         </div>
 
         <div class="col-lg-4">
@@ -81,11 +132,20 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email address:</label>
-                    <input type="email" class="form-control" id="email">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city">
                 </div>
 
+                <div class="form-group">
+                    <label for="contry">Country</label>
+                    <input type="text" class="form-control" id="contry">
+                </div>
 
+                <div class="form-group">
+                    <label for="req">Your Requirements</label>
+
+                    @Html.TextArea("Requirements", new { @class = "form-control", @id = "req" })
+                </div>
 
             </form>
 
@@ -96,7 +156,4 @@
         </div>
     </div>
 </div>
-
-
-
 
