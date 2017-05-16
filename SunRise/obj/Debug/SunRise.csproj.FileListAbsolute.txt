@@ -157,7 +157,6 @@ F:\MyFolder\Personal\Repositary\NNR\SunRise\bin\Microsoft.Owin.Security.OAuth.xm
 F:\MyFolder\Personal\Repositary\NNR\SunRise\bin\Microsoft.Owin.Security.Google.xml
 F:\MyFolder\Personal\Repositary\NNR\SunRise\bin\Microsoft.Owin.Security.Twitter.xml
 F:\MyFolder\Personal\Repositary\NNR\SunRise\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-F:\MyFolder\Personal\Repositary\NNR\SunRise\obj\Debug\SunRise.csprojResolveAssemblyReference.cache
 F:\MyFolder\Personal\Repositary\NNR\SunRise\obj\Debug\SunRise.dll
 F:\MyFolder\Personal\Repositary\NNR\SunRise\obj\Debug\SunRise.pdb
 D:\Utilities\Repositary\NNR\SunRise\bin\roslyn\csc.exe
