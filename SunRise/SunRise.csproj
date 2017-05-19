@@ -239,6 +239,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config" />
     <None Include="Properties\PublishProfiles\home.pubxml" />
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="Scripts\image_slide.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -292,6 +293,16 @@
     <Content Include="Views\Home\QualityCommit.cshtml" />
     <Content Include="Views\Home\Carer.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\CSR.cshtml" />
+    <Content Include="Views\Home\CorporatePolicies.cshtml" />
+    <Content Include="Views\Home\Updates.cshtml" />
+    <Content Include="Views\Home\ReadyMix.cshtml" />
+    <Content Include="Views\Home\Mission.cshtml" />
+    <Content Include="Views\Home\CoreValues.cshtml" />
+    <Content Include="Views\Home\Management.cshtml" />
+    <Content Include="Views\Home\ReadyMixConcrete.cshtml" />
+    <Content Include="Views\Home\Advantages.cshtml" />
+    <Content Include="Views\Home\Technology.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

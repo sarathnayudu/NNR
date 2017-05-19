@@ -1,0 +1,123 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2">
+
+            <img src="~/images/1.jpg" height="150" />
+
+        </div>
+        <div class="col-lg-2">
+
+            <img src="~/images/2.jpg" height="150" />
+
+        </div>
+        <div class="col-lg-2">
+
+            <img src="~/images/3.jpg" height="150" />
+
+        </div>
+
+        <div class="col-lg-2">
+
+            <img src="~/images/4.jpg" height="150" />
+
+        </div>
+        <div class="col-lg-2">
+
+            <img src="~/images/5.jpg" height="150" />
+
+        </div>
+        <div class="col-lg-2">
+
+            <img src="~/images/6.jpg" height="150" />
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="container" style="height:100px">
+</div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-4">
+            <p>
+                VNS ReadyMix is a leader in the distribution of building Concrete and much more. For more information, please contact our Vijayawada Corporate Office.
+            </p>
+
+            <address>
+                <strong>VIJAYAWADA CORPORATE OFFICE</strong><br>
+                1234 Example Street<br>
+                Antartica, Example 0987<br>
+                <abbr title="Phone">P:</abbr> (123) 456-7890
+                <abbr title="Fax">F:</abbr> (123) 456-7890
+            </address>
+
+            <address>
+                <strong>Email</strong><br>
+                <a href="mailto:#">exam.ple@example.com</a>
+            </address>
+
+        </div>
+
+        <div class="col-lg-4">
+
+            <form>
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" class="form-control" id="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city">
+                </div>
+
+                <div class="form-group">
+                    <label for="contry">Country</label>
+                    <input type="text" class="form-control" id="contry">
+                </div>
+
+                <div class="form-group">
+                    <label for="req">Your Requirements</label>
+
+                    @Html.TextArea("Requirements", new { @class = "form-control", @id = "req" })
+                </div>
+
+            </form>
+
+
+        </div>
+
+        <div class="col-lg-2">
+        </div>
+    </div>
+</div>
+

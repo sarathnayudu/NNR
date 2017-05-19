@@ -245,3 +245,4 @@ D:\Utilities\Repositary\NNR\SunRise\bin\normnfkd.nlp
 D:\Utilities\Repositary\NNR\SunRise\obj\Debug\SunRise.csprojResolveAssemblyReference.cache
 D:\Utilities\Repositary\NNR\SunRise\obj\Debug\SunRise.dll
 D:\Utilities\Repositary\NNR\SunRise\obj\Debug\SunRise.pdb
+F:\MyFolder\Personal\Repositary\NNR\SunRise\obj\Debug\SunRise.csprojResolveAssemblyReference.cache
