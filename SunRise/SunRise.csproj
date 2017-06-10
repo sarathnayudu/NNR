@@ -202,10 +202,17 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Enqiry.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Views\Home\Services.cshtml.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Home\Services.cshtml.designer.cs">
+      <DependentUpon>Services.cshtml.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -303,6 +310,7 @@
     <Content Include="Views\Home\ReadyMixConcrete.cshtml" />
     <Content Include="Views\Home\Advantages.cshtml" />
     <Content Include="Views\Home\Technology.cshtml" />
+    <Content Include="Views\Home\Services.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

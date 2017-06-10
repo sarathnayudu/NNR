@@ -60,23 +60,22 @@
             </p>
 
             <address>
-                <strong>VIJAYAWADA CORPORATE OFFICE</strong><br>
-                1234 Example Street<br>
-                Antartica, Example 0987<br>
-                <abbr title="Phone">P:</abbr> (123) 456-7890
-                <abbr title="Fax">F:</abbr> (123) 456-7890
-            </address>
-
-            <address>
-                <strong>Email</strong><br>
-                <a href="mailto:#">exam.ple@example.com</a>
+                <strong><u>Contact:</u></strong><br/>
+                <strong>Plant Address:</strong><br/>
+                Kolanukonda,Tadepalli(Mandal),Guntur(District)<br/>
+               @* <abbr title="Phone">P:</abbr> (123) 456-7890
+                <abbr title="Fax">F:</abbr> (123) 456-7890*@
+                <strong>Office Address:</strong><br/>
+                Shop No 17,1st Floor,K.S Vyas Police Complex,Labbipet,Vijayawada
+                @*<a href="mailto:#">exam.ple@example.com</a>*@
             </address>
 
         </div>
 
         <div class="col-lg-4">
 
-            <form>
+            <form action="https://bharathinayudunz@gmail.com/Send Request"
+                                   method="post" id="email">
 
                 <div class="form-group">
                     <label for="name">Name:</label>
@@ -109,6 +108,9 @@
                     <label for="req">Your Requirements</label>
 
                     @Html.TextArea("Requirements", new { @class = "form-control", @id = "req" })
+                </div>
+                <div class="form-group">
+                   <input type="button"value="Send Request" style="font-size:17pt;border:2px solid #336600;padding:3px;background-color:orangered;<font color="green"></font></input>
                 </div>
 
             </form>
