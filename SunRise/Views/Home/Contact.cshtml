@@ -74,12 +74,12 @@
 
         <div class="col-lg-4">
 
-          @Html.BeginForm("SendEnqry","Home")
+         @using (Html.BeginForm("SendEnqry", "Home"))
             {
 
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    @Html.TextBoxFor(x=>x.Name,new { @class = "form-control" })                 
+                    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })                 
                 </div>
 
 

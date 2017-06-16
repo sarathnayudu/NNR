@@ -1,4 +1,4 @@
-﻿
+﻿@model SunRise.Models.Enqiry
 @{
     ViewBag.Title = "Contact";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -60,58 +60,69 @@
             </p>
 
             <address>
-                <strong>VIJAYAWADA CORPORATE OFFICE</strong><br>
-                1234 Example Street<br>
-                Antartica, Example 0987<br>
-                <abbr title="Phone">P:</abbr> (123) 456-7890
-                <abbr title="Fax">F:</abbr> (123) 456-7890
-            </address>
-
-            <address>
-                <strong>Email</strong><br>
-                <a href="mailto:#">exam.ple@example.com</a>
+                <strong><u>Contact:</u></strong><br/>
+                <strong>Plant Address:</strong><br/>
+                Kolanukonda,Tadepalli(Mandal),Guntur(District)<br/>
+               @* <abbr title="Phone">P:</abbr> (123) 456-7890
+                <abbr title="Fax">F:</abbr> (123) 456-7890*@
+                <strong>Office Address:</strong><br/>
+                Shop No 17,1st Floor,K.S Vyas Police Complex,Labbipet,Vijayawada
+                @*<a href="mailto:#">exam.ple@example.com</a>*@
             </address>
 
         </div>
 
         <div class="col-lg-4">
 
-            <form>
+          @Html.BeginForm("SendEnqry","Home")
+            {
 
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="text" class="form-control" id="name">
+                    @Html.TextBoxFor(x=>x.Name,new { @class = "form-control" })                 
                 </div>
 
 
                 <div class="form-group">
                     <label for="email">Email address:</label>
-                    <input type="email" class="form-control" id="email">
+                    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+                    
+                  
                 </div>
 
 
                 <div class="form-group">
                     <label for="phone">Phone Number:</label>
-                    <input type="text" class="form-control" id="phone">
+                    @Html.TextBoxFor(x => x.Contact, new { @class = "form-control" })
+                    
+                 
                 </div>
 
                 <div class="form-group">
                     <label for="city">City</label>
-                    <input type="text" class="form-control" id="city">
+                    @Html.TextBoxFor(x => x.City, new { @class = "form-control" })
+                    
+                  
                 </div>
 
                 <div class="form-group">
                     <label for="contry">Country</label>
-                    <input type="text" class="form-control" id="contry">
+                    @Html.TextBoxFor(x => x.Country, new { @class = "form-control" })
+                    
+                  
                 </div>
 
                 <div class="form-group">
                     <label for="req">Your Requirements</label>
 
-                    @Html.TextArea("Requirements", new { @class = "form-control", @id = "req" })
+                    @Html.TextAreaFor(x=>x.YourRequirements, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                   <input type="submit"
+                           class="btn btn-primary" value="Send Request" />
                 </div>
 
-            </form>
+          }
 
 
         </div>

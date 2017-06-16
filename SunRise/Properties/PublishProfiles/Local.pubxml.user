@@ -19,10 +19,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/07/2015 12:30:09</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>05/19/2017 16:21:14</publishTime>
+      <publishTime>06/16/2017 16:23:23</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>05/19/2017 16:21:14</publishTime>
+      <publishTime>06/16/2017 16:23:23</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>03/02/2015 09:32:26</publishTime>
@@ -136,10 +136,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/SunRise.dll">
-      <publishTime>05/19/2017 16:21:06</publishTime>
+      <publishTime>06/16/2017 14:06:54</publishTime>
     </File>
     <File Include="bin/SunRise.pdb">
-      <publishTime>05/19/2017 16:21:06</publishTime>
+      <publishTime>06/16/2017 14:06:54</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>01/28/2015 04:04:30</publishTime>
@@ -256,7 +256,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/23/2017 17:08:01</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>05/19/2017 16:21:08</publishTime>
+      <publishTime>06/16/2017 16:23:18</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>03/23/2017 17:07:42</publishTime>
@@ -346,46 +346,49 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/23/2017 17:07:49</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
-      <publishTime>05/19/2017 15:22:17</publishTime>
+      <publishTime>06/15/2017 13:57:08</publishTime>
     </File>
     <File Include="Views/Home/Advantages.cshtml">
-      <publishTime>05/19/2017 16:05:02</publishTime>
+      <publishTime>06/15/2017 13:57:08</publishTime>
     </File>
     <File Include="Views/Home/Carer.cshtml">
       <publishTime>05/16/2017 11:42:12</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
-      <publishTime>05/16/2017 11:42:31</publishTime>
+      <publishTime>06/15/2017 14:28:41</publishTime>
     </File>
     <File Include="Views/Home/CoreValues.cshtml">
-      <publishTime>05/19/2017 16:18:32</publishTime>
+      <publishTime>06/15/2017 13:57:08</publishTime>
     </File>
     <File Include="Views/Home/CorporatePolicies.cshtml">
-      <publishTime>05/19/2017 12:41:26</publishTime>
+      <publishTime>06/16/2017 16:22:02</publishTime>
     </File>
     <File Include="Views/Home/CSR.cshtml">
       <publishTime>05/19/2017 12:26:47</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>05/19/2017 16:11:31</publishTime>
+      <publishTime>06/15/2017 13:59:55</publishTime>
     </File>
     <File Include="Views/Home/Management.cshtml">
       <publishTime>05/19/2017 15:24:48</publishTime>
     </File>
     <File Include="Views/Home/Mission.cshtml">
-      <publishTime>05/19/2017 16:17:44</publishTime>
+      <publishTime>06/15/2017 13:57:08</publishTime>
     </File>
     <File Include="Views/Home/QualityCommit.cshtml">
-      <publishTime>05/16/2017 11:41:51</publishTime>
+      <publishTime>06/15/2017 14:02:44</publishTime>
     </File>
     <File Include="Views/Home/ReadyMix.cshtml">
-      <publishTime>05/19/2017 16:17:06</publishTime>
+      <publishTime>06/15/2017 13:57:08</publishTime>
     </File>
     <File Include="Views/Home/ReadyMixConcrete.cshtml">
-      <publishTime>05/19/2017 16:13:09</publishTime>
+      <publishTime>06/15/2017 13:57:08</publishTime>
+    </File>
+    <File Include="Views/Home/Services.cshtml">
+      <publishTime>06/15/2017 13:57:08</publishTime>
     </File>
     <File Include="Views/Home/Technology.cshtml">
-      <publishTime>05/19/2017 16:05:34</publishTime>
+      <publishTime>06/15/2017 14:01:57</publishTime>
     </File>
     <File Include="Views/Home/Updates.cshtml">
       <publishTime>05/19/2017 12:30:56</publishTime>
@@ -430,7 +433,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/23/2017 17:07:41</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/19/2017 16:21:07</publishTime>
+      <publishTime>06/16/2017 14:07:34</publishTime>
     </File>
   </ItemGroup>
 </Project>
