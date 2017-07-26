@@ -15,15 +15,31 @@ namespace NNR_Test.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
+            return View();
+        }
+        public ActionResult QualityCommitment()
+        {
+            return View();
+        }
+        public ActionResult Carer()
+        {
+            return View();
+        }
+        public ActionResult Updates()
+        {
+            return View();
+        }
+        public ActionResult CSR()
+        {
+            return View();
+        }
+        public ActionResult CorporatePolicies()
+        {
             return View();
         }
     }

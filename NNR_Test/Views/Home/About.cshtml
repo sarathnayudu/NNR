@@ -1,7 +1,78 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<main class="site-main page-main">
+    <section class="hero_area1">
+        <div class="hero_content">
+            <div class="container">
+                <div class="row">
+                    @*<div class="col-sm-12">
+                        <h1>COMPANY NAME</h1>
+                        <h2>Donec Elit Non Porta Gravida Eget Metus</h2>
+                    </div>*@
+                </div>
+            </div>
+        </div>
+    </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                <br />
+                </div>
+            </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <section class="page col-sm-9">
+                <div class="entry" id="AboutVNS">
+                    @{
+                        Html.RenderPartial("_AboutVNS");
+                    }
+                </div>
+                <div class="entry" id="ProductsandServices" style="display:none">
+                    @{
+                        Html.RenderPartial("_ProductsandServices");
+                    }
+                </div>
+                <div class="entry" id="OurMissionVision" style="display:none">
+                    @{
+                        Html.RenderPartial("_OurMissionVision");
+                    }
+                </div>
+                <div class="entry" id="OurCoreValues" style="display:none">
+                    @{
+                        Html.RenderPartial("_OurCoreValues");
+                    }
+                </div>
+                <div class="entry" id="Management" style="display:none">
+                    @{
+                        Html.RenderPartial("_Management");
+                    }
+                </div>
+            </section>
+
+            <aside class="sidebar col-sm-3">
+                <div class="widget">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li class="current"><a href="javascript:;" idi="AboutVNS" onclick="fntab(this)" title="">About VNS</a></li>
+                        <li><a href="javascript:;1" title="" idi="ProductsandServices" onclick="fntab(this)">Products and Services</a></li>
+                        <li><a href="javascript:;" title="" idi="OurMissionVision" onclick="fntab(this)">Our Mission & Vision</a></li>
+                        <li><a href="javascript:;1" title="" idi="OurCoreValues" onclick="fntab(this)">Our Core Values</a></li>
+                        <li><a href="javascript:;" title="" idi="Management" onclick="fntab(this)">Management</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</main>
+<script>
+    function fntab(e)
+    {
+        debugger;
+        var idi=$(e).attr("idi");
+        $('.entry').css("display", "none");
+        $('#' + idi + '').css("display", "block");
+    }
+</script>

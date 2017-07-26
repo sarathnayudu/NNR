@@ -279,6 +279,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_AboutVNS.cshtml" />
+    <Content Include="Views\Shared\_ProductsandServices.cshtml" />
+    <Content Include="Views\Shared\_OurMissionVision.cshtml" />
+    <Content Include="Views\Shared\_OurCoreValues.cshtml" />
+    <Content Include="Views\Shared\_Management.cshtml" />
+    <Content Include="Views\Home\QualityCommitment.cshtml" />
+    <Content Include="Views\Home\Carer.cshtml" />
+    <Content Include="Views\Home\Updates.cshtml" />
+    <Content Include="Views\Home\CSR.cshtml" />
+    <Content Include="Views\Home\CorporatePolicies.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

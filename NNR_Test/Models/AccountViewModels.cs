@@ -109,4 +109,19 @@ namespace NNR_Test.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
     }
+    public class ModelContact
+    {
+        [Display(Name = "Name")]
+        public string Name { get; set; }
+        [Display(Name = "Email Address")]
+        public string Email { get; set; }
+        [Display(Name = "Phone Number")]
+        public string PhoneNumber { get; set; }
+        [Display(Name = "City")]
+        public string City { get; set; }
+        [Display(Name = "Country")]
+        public string Country { get; set; }
+        [Display(Name = "Your Requirements")]
+        public string YourRequirements { get; set; }
+    }
 }

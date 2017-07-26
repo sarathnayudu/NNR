@@ -8,14 +8,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h1>COMPANY NAME</h1>
-                        <h2>Donec Elit Non Porta Gravida Eget Metus</h2>
+                        <center>
+                            <h1>GROWING FROM STRENGTH TO STRENGTH</h1>
+                            <h4 class="background_color">Since 1990, Aparna Enterprises Limited has been a leader in the distribution
+                                of building materials and is now venturing into manufacturing the next generation
+                                of Double Charge Vitrified Polished Tiles and GVT Tiles</h4>
+                        </center>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <br /><br />
 
     <section class="boxes_area">
         <div class="container">
@@ -35,7 +39,7 @@
                         <center>
                             <i class="fa fa-building-o"></i>
                             <h3>ESTEEMED CLIENTS</h3>
-                            <h2>700+</h2>
+                            <h2> <span class="counter-count">700</span><span>+</span></h2>
                         </center>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id pulvinar magna. Aenean accumsan iaculis lorem, nec sodales lectus auctor tempor.</p>
                     </div>
@@ -45,7 +49,7 @@
                         <center>
                             <i class="fa fa-cogs"></i>
                             <h3>TEAM MEMBERS</h3>
-                            <h2>1200+</h2>
+                            <h2> <span class="counter-count">1200</span><span>+</span></h2>
                         </center>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id pulvinar magna. Aenean accumsan iaculis lorem, nec sodales lectus auctor tempor.</p>
                     </div>
@@ -148,3 +152,16 @@
         </div>
     </section>
 </main>
+<script>
+$('.counter-count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 5000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+</script>
