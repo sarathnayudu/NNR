@@ -29,7 +29,7 @@
                         <center>
                             <i class="fa fa-line-chart"></i>
                             <h3>YEARS OF EXPERTISE</h3>
-                            <h2>27</h2>
+                            <h2><span class="counter-count">15</span></h2>
                         </center>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id pulvinar magna. Aenean accumsan iaculis lorem, nec sodales lectus auctor tempor.</p>
                     </div>
@@ -39,7 +39,7 @@
                         <center>
                             <i class="fa fa-building-o"></i>
                             <h3>ESTEEMED CLIENTS</h3>
-                            <h2> <span class="counter-count">700</span><span>+</span></h2>
+                            <h2> <span class="counter-count">111</span><span>+</span></h2>
                         </center>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id pulvinar magna. Aenean accumsan iaculis lorem, nec sodales lectus auctor tempor.</p>
                     </div>
@@ -49,7 +49,7 @@
                         <center>
                             <i class="fa fa-cogs"></i>
                             <h3>TEAM MEMBERS</h3>
-                            <h2> <span class="counter-count">1200</span><span>+</span></h2>
+                            <h2> <span class="counter-count">200</span><span>+</span></h2>
                         </center>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id pulvinar magna. Aenean accumsan iaculis lorem, nec sodales lectus auctor tempor.</p>
                     </div>
@@ -64,12 +64,12 @@
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="~/Content/Image/venster-upvc-300x200.jpg" alt="Post" class="img-responsive"/>
+                            <img src="~/Content/Image/rmc4-300x200.jpg" alt="Post" class="img-responsive" />
                         </div>
                         <div class="col-md-6">
                             <div class="media-body">
-                                <h4 class="media-heading">FIRST SERVICE TITLE</h4>
-                                <p>Lorem ipsum dolor amet,consectetur adipiscing elit. Proin id pulvinar magna. Aenean accumsan iaculis lorem, nec sodales lectus auctor tempor.</p>
+                                <h4 class="media-heading">VNS READYMIX</h4>
+                                <p>VNS is committed to providing quality products and services to our customers. All of VNS products are manufactured to the highest quality standards.Our commitment to quality and total customer satisfaction is the responsibility of every employee and is demonstrated by our quality system, on-going management review, and continual improvement based on customer feedback.</p>
                             </div>
                         </div>
                     </div>
@@ -78,18 +78,20 @@
 
                         </div>
                         <div class="col-md-6">
-                            <button type="button" class="btn btn-default hover">Go to Venster uPVC</button>
+                            <a href="/Home/about">
+                                <button type="button" class="btn btn-default hover">VNS READYMIX</button>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="~/Content/Image/rmc4-300x200.jpg" alt="Post" class="img-responsive" />
+                            <img src="~/Content/Image/venster-upvc-300x200.jpg" alt="Post" class="img-responsive" />
                         </div>
                         <div class="col-md-6">
                             <div class="media-body">
-                                <h4 class="media-heading">FIRST SERVICE TITLE</h4>
+                                <h4 class="media-heading">VNS HEIGHTS</h4>
                                 <p>Lorem ipsum dolor amet,consectetur adipiscing elit. Proin id pulvinar magna. Aenean accumsan iaculis lorem, nec sodales lectus auctor tempor.</p>
                             </div>
                         </div>
@@ -99,13 +101,15 @@
 
                         </div>
                         <div class="col-md-6">
-                            <button type="button" class="btn btn-default hover">Go to Ready Mix Concrete</button>
+                            <a href="/Home/UnderConstruction">
+                                <button type="button" class="btn btn-default hover">VNS HEIGHTS</button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
             <br />
-            <div class="row">
+            @*<div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <div class="row">
                         <div class="col-md-6">
@@ -148,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>*@
         </div>
     </section>
 </main>
@@ -157,7 +161,7 @@ $('.counter-count').each(function () {
         $(this).prop('Counter',0).animate({
             Counter: $(this).text()
         }, {
-            duration: 5000,
+            duration: 2000,
             easing: 'swing',
             step: function (now) {
                 $(this).text(Math.ceil(now));

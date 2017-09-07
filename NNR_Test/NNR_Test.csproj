@@ -221,6 +221,7 @@
     <Content Include="Content\Image\h4.jpeg" />
     <Content Include="Content\Image\rmc4-300x200.jpg" />
     <Content Include="Content\Image\tiles-300x200.png" />
+    <Content Include="Content\Image\under_construction.jpg" />
     <Content Include="Content\Image\unispace-300x200.jpg" />
     <Content Include="Content\Image\venster-upvc-300x200.jpg" />
     <Content Include="Content\Image\vnsLogo.png" />
@@ -289,6 +290,7 @@
     <Content Include="Views\Home\Updates.cshtml" />
     <Content Include="Views\Home\CSR.cshtml" />
     <Content Include="Views\Home\CorporatePolicies.cshtml" />
+    <Content Include="Views\Home\UnderConstruction.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
