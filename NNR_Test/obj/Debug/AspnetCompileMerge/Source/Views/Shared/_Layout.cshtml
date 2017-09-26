@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Company NAME</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin-ext" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet">
+    @*<link href="~/Content/css/font-awesome.min.css" rel="stylesheet">*@
+    <link href="~/Content/css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <p><span class="glyphicon glyphicon-envelope"></span>&nbsp;ch.hai4u@gmail.com</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <p><i class="fa fa-phone"></i>&nbsp;+91-9052511666</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="list-inline pull-right">
+                            <li><a href="/Home/CorporatePolicies">Corporate Policies</a></li>
+                            <li><a href="/Home/CSR">CSR</a></li>
+                            <li><a href="/Home/Updates">Updates</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a href="/Home/Index" class="navbar-brand">
+                    @*<img src="img/logo.png" alt="Post">*@
+                    <img src="~/Content/Image/vnsLogo.png" />
+                </a>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                    <ul class="nav navbar-nav main-navbar-nav">
+                        <li class="active"><a href="/Home/Index" title="">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DIVISIONS<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Home/about" title="">VNS READYMIX</a></li>
+                                <li><a href="/Home/UnderConstruction" title="">VNS HEIGHTS</a></li>
+                                @*<li><a href="#" title="">TILES</a></li>
+                                <li><a href="#" title="">APARNA VENSTER uPVC</a></li>*@
+                            </ul>
+                        </li>
+                        <li><a href="/Home/QualityCommitment" title="">QUALITY COMMITMENT</a></li>
+                        <li><a href="/Home/about" title="">ABOUT</a></li>
+                        <li><a href="/Home/Carer" title="">CAREERS</a></li>
+                        <li><a href="/Home/Contact" title="">CONTACT</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                <!-- END MAIN NAVIGATION -->
+            </div>
+        </nav>
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 fbox">
+                    <h4>DIVISIONS</h4>
+                    <ul>
+                        <li><a href="#" title="">VNS READYMIX</a></li>
+                        <li><a href="#" title="">VNS HEIGHTS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 fbox">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="#" title="">About</a></li>
+                        <li><a href="#" title="">Careers</a></li>
+                        <li><a href="#" title="">Contact</a></li>
+                        <li><a href="#" title="">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 fbox">
+                    <h4>VNS GROUP</h4>
+                    <ul>
+                        <li><a href="#" title="">VNS READYMIX</a></li>
+                        <li><a href="#" title="">VNS HEIGHTS</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 fbox">
+                    <h4>CONTACT US</h4>
+                    <b>Plant Address:</b>
+                    <ul>
+                        <li><a href="#" title="">Kolanukonda.</a></li>
+                        <li><a href="#" title="">Tadepalli(Mandal),Guntur(District)</a></li>
+                    </ul>
+                    <b>Office Address:</b>
+                    <ul>
+                        <li><a href="#" title="">Shop No 17,1st Floor</a></li>
+                        <li><a href="#" title="">K.S Vyas Police Complex</a></li>
+                        <li><a href="#" title="">Labbipet,Vijayawada</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="pull-left">&copy;Ready Mix Enterprises Ltd. Built by NNR Naturals.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <ul class="list-inline navbar-right">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    @*<script src="js/bootstrap.min.js"></script>*@
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $('.carousel[data-type="multi"] .item').each(function () {
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+
+            for (var i = 0; i < 4; i++) {
+                next = next.next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+
+                next.children(':first-child').clone().appendTo($(this));
+            }
+        });
+    </script>
+</body>
+</html>
