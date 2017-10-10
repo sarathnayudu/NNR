@@ -255,8 +255,8 @@ a {
 
 /* Hero */
 .hero_area {
-    /*background-image: url(img/hero.jpg);*/
     background-image: url('../Image/background.jpg');
+    /*background-image: url('../Image/background.jpg');*/
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -265,8 +265,8 @@ a {
 }
 
 .hero_area1 {
-    /*background-image: url(img/hero.jpg);*/
     background-image: url('../Image/background.jpg');
+    /*background-image: url('../Image/background.jpg');*/
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
