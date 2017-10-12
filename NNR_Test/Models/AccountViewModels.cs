@@ -123,5 +123,7 @@ namespace NNR_Test.Models
         public string Country { get; set; }
         [Display(Name = "Your Requirements")]
         public string YourRequirements { get; set; }
+
+        public string Succesmessage { get; set; }
     }
 }
