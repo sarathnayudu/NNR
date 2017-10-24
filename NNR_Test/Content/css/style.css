@@ -1,4 +1,342 @@
 /* Base */
+
+
+
+/*
+Colors - Main Blue:#317fc2; Navy:#334a66; Orange:#f7941d; 90% Grey:#414042; 70% Grey:#707070; 20% Grey:#ebebeb;
+Sanchez - https://fonts.google.com/specimen/Sanchez
+Proxima Nova - https://typekit.com/fonts/proxima-nova
+Icons - Font Awesome, http://fontawesome.io/
+*/
+
+h1{
+	font-family: 'Sanchez', serif;
+	font-size: 28pt;
+	color: #414042;
+	text-transform: uppercase;
+}
+
+h2{
+	font-family: 'Sanchez', serif;
+	font-size: 26pt;
+	color: #414042;
+}
+
+h3{
+	font-family: 'Proxima-Nova', sans-serif;
+	font-size: 20pt;
+	color: #414042;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 700;
+}
+
+h4{
+	font-family: 'Proxima-Nova', sans-serif;
+	font-size: 16pt;
+	color: #414042;
+	font-style: normal;
+	font-weight: 700;
+}
+
+body{
+	font-family: 'Proxima-Nova', sans-serif;
+	font-size: 14pt;
+	font-style: normal;
+	font-weight: 400;
+	color: #414042;
+	margin: 0;
+	padding: 0;
+}
+
+p{
+	font-family: 'Proxima-Nova', sans-serif;
+	font-size: 14pt;
+	font-style: normal;
+	font-weight: 400;
+	color: #414042;
+}
+
+a{
+	color: #317fc2;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #f7941d;
+	text-decoration: underline;
+}
+
+#logo{
+	background-color: white;
+	/* width should be ~ 2 columns */
+}
+
+#top-bar{
+	background-color: #317fc2;
+	width: 100%;
+	padding: 30px 0;
+}
+
+#main-nav{
+	width: 1170px;
+}
+
+#main-nav ul{
+	color: white;
+	background-color: transparent;
+	text-align: right;
+    margin: 0 auto;
+}
+
+#main-nav ul li{
+	text-transform: uppercase;
+	border: 1px solid white;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 5px 8px;
+	margin: 0 5px;
+}
+
+#main-nav ul li:hover{
+	background-color: white;
+	color: #317fc2;
+	cursor: pointer;
+	-webkit-transition: all 0.5s; 
+	transition: all 0.5s;
+}
+
+#top-bar #cart{
+	text-align: right;
+	color: #ebebeb;
+	font-family: 'Proxima-Nova', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12pt;
+}
+
+#top-bar #cart:hover{
+	text-decoration: underline;
+}
+
+#top-bar #cart .help{
+	color: white;
+}
+
+#top-bar #cart .cart{
+	color: #ebebeb;
+}
+
+#top-bar #cart .cart-icon{
+	color: #f7941d;
+	/* This is for the icon coloring, however that's worked in */
+}
+
+#shipping{
+	background-color:#334a66;
+	color: white;
+	font-family: 'Proxima-Nova', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18pt;
+}
+
+#feature-img{
+	/* Tiled marketing image styles, should be stretched across ~9 columns */
+}
+
+#secondary-feature-box{
+	/* Box to contain secondary collection tiles, stretching across ~9 columns */
+}
+
+.collection-bottombox{
+	background-color: #707070;
+	color: white;
+}
+
+.collection-bottombox:hover{
+	background-color: #334a66;
+}
+
+.collection-bottombox-tile{
+	/* Secondary collection images below main tiled, contained in 'secondary-feature-box' */
+	font-family: 'Sanchez', serif;
+}
+
+.collection-bottombox body{
+	font-family: 'Proxima-Nova', sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: 400;
+}
+
+#high-interest-box{
+	background-color: #ebebeb;
+	/* ~3 columms width */
+}
+
+.hi-collection-box{
+	font-family: 'Proxima-Nova', sans-serif;
+	font-size: 16pt;
+	font-style: normal;
+	font-weight: 400;
+	padding: 10px;
+}
+
+.hi-collection-box:hover{
+	background-color: #f7941d;
+}
+
+/* ombres will be use in conjunction with .high-collection-box */
+.collection-ombre-1{
+	background-color: #317fc2;
+}
+
+.collection-ombre-2{
+	background-color: rgba(49, 127, 194, .9)
+}
+
+.collection-ombre-3{
+	background-color: rgba(49, 127, 194, .8)
+}
+
+.collection-ombre-4{
+	background-color: rgba(49, 127, 194, .7)
+}
+
+.collection-ombre-5{
+	background-color: rgba(49, 127, 194, .6)
+}
+
+.collection-ombre-6{
+	background-color: rgba(49, 127, 194, .5)
+}
+
+.collection-ombre-7{
+	background-color: rgba(49, 127, 194, .4)
+}
+
+.collection-ombre-8{
+	background-color: rgba(49, 127, 194, .3)
+}
+
+.collection-ombre-9{
+	background-color: rgba(49, 127, 194, .2)
+}
+
+.collection-ombre-10{
+	background-color: rgba(49, 127, 194, .1)
+}
+
+#search{
+	/* Width ~6 columns */
+	background-color: #ebebeb;
+	color: #707070;
+	font-family: 'Proxima-Nova', sans-serif;
+	font-size: 14pt;
+	font-style: normal;
+	font-weight: 400;
+}
+
+#search .dropdownbutton{
+	background-color: #317fc2;
+	color: white;
+	font-family: 'Proxima-Nova', sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: 400;
+}
+
+#search .dropdownbutton .selectortext{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12pt;
+}
+
+#search .dropdown{
+	background-color: white;
+	border: 1px solid #707070;
+}
+
+#search .dropdown ul{
+	color: #707070;
+	font-family: 'Proxima-Nova', sans-serif;
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#search .dropdown ul li{
+	/* Add necessary padding */
+}
+
+#search .button{
+	background-color: #707070;
+	color: white;
+	font-family: 'Proxima-Nova', sans-serif;
+	font-size: 14pt;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#dw-band{
+	width: 100%;
+	background-color: #f7941d;
+	color: #414042;
+	font-family: 'Proxima-Nova', sans-serif;
+	font-size: 16pt;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22pt;
+}
+
+#dw-band .button{
+	background-color: #ebebeb;
+	color: #707070;
+	font-family: 'Proxima-Nova', sans-serif;
+	font-size: 20pt;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.penworthy-differences{
+	/* 
+	Width ~3 columns each, use padding to push closer together to center
+	Standard body text, header on each just bolded - 700 weight of Proxima Nova
+	Images/Icons to be provided for this section
+	 */
+	text-align: center;
+}
+
+#footer{
+	background-color: #317fc2;
+	color: white;
+	text-align: left;
+	font-family: 'Proxima-Nova', sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: 400;
+}
+
+#footer .title{
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.social-icon{
+	color: white;
+}
+
+.social-icon:hover{
+	color: #f7941d;
+}
+
+
+
+
 @font-face {
     font-family: 'Sanchezregular';
     src: url('../fonts/Sanchezregular.otf') format("opentype");
